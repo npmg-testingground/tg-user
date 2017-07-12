@@ -368,7 +368,7 @@ boom@2.x.x:
   dependencies:
     hoek "2.x.x"
 
-boom@5.x.x:
+boom@5.x.x, boom@^5.1.0:
   version "5.1.0"
   resolved "https://registry.yarnpkg.com/boom/-/boom-5.1.0.tgz#0308fa8e924cd6d42d9c3bf4883bdc98f0e71df8"
   dependencies:
@@ -559,6 +559,10 @@ co@^4.6.0:
 code-point-at@^1.0.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/code-point-at/-/code-point-at-1.1.0.tgz#0d070b4d043a5bea33a2f1a40e2edb3d9a4ccf77"
+
+colors@^1.1.2:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/colors/-/colors-1.1.2.tgz#168a4701756b6a7f51a12ce0c97bfa28c084ed63"
 
 combined-stream@^1.0.5, combined-stream@~1.0.5:
   version "1.0.5"

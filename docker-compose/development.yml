@@ -1,25 +1,6 @@
 version: "3"
 
 services:
-  tg-user:
-    build: ../
-    networks: 
-      - restserve_ecosystem
-    environment:
-      - NODE_ENV=development
-      - HOST=localhost
-      - DB_HOST=rethinkdb
-      - DB_DRIVER_PORT=28015
-      - DB_NAME=tg-user  
-      - SECRET_TOKEN=12345 #it's a good idea to change it, but it's development so, yeah!
-      - SERVICE_PORT=8005
-      - START_COMMAND=npm run debug
-    ports: 
-      - "8005:8005" #microservice port
-      - "9229:9229" #default debug port
-    depends_on: 
-      - rethinkdb
-    
 
   rethinkdb: 
     image: rethinkdb

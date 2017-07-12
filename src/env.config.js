@@ -13,7 +13,7 @@ const schema: Object = Joi.object({
 	HOST: Joi.string().default('localhost'),
 	DB_DRIVER_PORT: Joi.number().positive().default(28015),
 	DB_HOST: Joi.string().default("localhost"),
-	DB_NAME: Joi.string().default("tg-user"),
+	DB_NAME: Joi.string().default("TestingGround"),
 	DB_TABLE_NAME: Joi.string().default("Users"),
 	SECRET_TOKEN: Joi.string().default("123456")
 }).unknown().required()

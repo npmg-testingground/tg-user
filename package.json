@@ -7,15 +7,15 @@
   "license": "MIT",
   "scripts": {
     "build": "webpack",
-		"bootstrap": "node ./build/bootstrap.js",
-		"start": "webpack && node ./build/backend.js",
-    "debug": "webpack && node --inspect-brk=0.0.0.0:9229 ./build/backend.js",
-    "dev": "yarn run build && yarn run debug",
+    "bootstrap": "webpack && node ./build/bootstrap.js",
+    "start": "webpack && node ./build/backend.js",
+    "debug": "webpack && node --inspect=0.0.0.0:9229 ./build/backend.js",
     "dev-watch-webpack": "webpack --watch",
     "dev-watch-backend": "nodemon --inspect-brk=9229 ./build/backend.js"
   },
   "dependencies": {
     "bluebird": "^3.5.0",
+    "colors": "^1.1.2",
     "hapi": "^16.4.3",
     "joi": "^10.6.0",
     "rethinkdbdash": "^2.3.29"
@@ -24,6 +24,7 @@
     "babel-cli": "^6.24.1",
     "babel-loader": "^7.1.1",
     "babel-preset-flow": "^6.23.0",
+    "boom": "^5.1.0",
     "flow-bin": "^0.49.1",
     "webpack": "^3.1.0"
   }
