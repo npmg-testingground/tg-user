@@ -1,5 +1,8 @@
 import * as handlers from './handlers';
-import UserModel from './db/model';
+import {
+	UserModel,
+	UserModelRequired
+} from './db/model';
 
 const routes: Array<Object> = [
 	{
@@ -18,10 +21,35 @@ const routes: Array<Object> = [
 		handler: handlers.createUser,
 		config: {
 			validate: {
+				payload: UserModelRequired
+			}
+		}
+	},
+	{
+		method: 'PUT',
+		path: '/users/{userId}',
+		config: {
+			handler: handlers.putUser,
+			validate: {
+				payload: UserModelRequired
+			}
+		}
+	},
+	{
+		method: 'PATCH',
+		path: '/users/{userId}',
+		config: {
+			handler: handlers.patchUser,
+			validate: {
 				payload: UserModel
 			}
 		}
 	},
+	{
+		method: 'DELETE',
+		path: '/users/{userId}',
+		handler: handlers.deleteUser
+	}
 ]
 
 export default routes;

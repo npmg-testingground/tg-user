@@ -9,7 +9,8 @@
     "build": "webpack",
     "bootstrap": "webpack && node ./build/bootstrap.js",
     "start": "webpack && node ./build/backend.js",
-    "debug": "webpack && node --inspect=0.0.0.0:9229 ./build/backend.js",
+		"debug": "webpack && node --inspect=0.0.0.0:9229 ./build/backend.js",
+		"docker": "docker-compose -f docker-compose/development.yml up -d",
     "dev-watch-webpack": "webpack --watch",
     "dev-watch-backend": "nodemon --inspect-brk=9229 ./build/backend.js"
   },
