@@ -9,8 +9,8 @@
     "build": "webpack",
     "bootstrap": "webpack && node ./build/bootstrap.js",
     "start": "webpack && node ./build/backend.js",
-		"debug": "webpack && node --inspect=0.0.0.0:9229 ./build/backend.js",
-		"docker": "docker-compose -f docker-compose/development.yml up -d",
+    "debug": "webpack && node --inspect=0.0.0.0:9229 ./build/backend.js",
+    "docker": "docker-compose -f docker-compose/development.yml up -d",
     "dev-watch-webpack": "webpack --watch",
     "dev-watch-backend": "nodemon --inspect-brk=9229 ./build/backend.js"
   },
@@ -23,9 +23,17 @@
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
+    "babel-eslint": "^7.2.3",
     "babel-loader": "^7.1.1",
     "babel-preset-flow": "^6.23.0",
     "boom": "^5.1.0",
+    "eslint": "^4.3.0",
+    "eslint-plugin-compat": "^1.0.4",
+    "eslint-plugin-flowtype": "^2.35.0",
+    "eslint-plugin-flowtype-errors": "^3.3.1",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-node": "^5.1.1",
+    "eslint-plugin-promise": "^3.5.0",
     "flow-bin": "^0.49.1",
     "webpack": "^3.1.0"
   }

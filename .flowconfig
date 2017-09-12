@@ -1,7 +1,0 @@
-[ignore]
-.*/node_modules/bluebird/.*
-[include]
-
-[libs]
-
-[options]

@@ -1,0 +1,20 @@
+{
+  "parser": "babel-eslint",
+  "plugins": ["node", "flowtype", "flowtype-errors"],
+  "extends": ["eslint:recommended", "plugin:node/recommended"],
+  "parserOptions": {
+    "sourceType": "module",
+    "allowImportExportEverywhere": false,
+    "codeFrame": false
+  },
+  "rules": {
+    "node/exports-style": ["error", "module.exports"],
+    "node/no-unsupported-features": "off",
+    "no-console": "off"
+  },
+  "settings": {
+    "flowtype": {
+      "onlyFilesWithFlowAnnotation": true
+    }
+  }
+}

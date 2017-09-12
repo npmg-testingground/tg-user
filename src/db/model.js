@@ -5,7 +5,7 @@
 
 import Joi from 'joi';
 
-export const UserModel: Object = Joi.object({
+export const UserModel = Joi.object({
 	firstName: Joi.string(),
 	lastName: Joi.string(),
 	email: Joi.string().email(),
@@ -13,7 +13,7 @@ export const UserModel: Object = Joi.object({
 	type: Joi.string() // oneOf(['teacher', 'student', 'admin'])
 }).required();
 
-export const UserModelRequired: Object = Joi.object({
+export const UserModelRequired = Joi.object({
 	firstName: Joi.string().required(),
 	lastName: Joi.string().required(),
 	email: Joi.string().email().required(),
